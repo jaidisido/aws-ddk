@@ -5,14 +5,14 @@ with open("README.md") as fp:
 
 
 setuptools.setup(
-    name="{{cookiecutter.directory_name}}",
-    version="{{cookiecutter.ddk_version}}",
-    description="An empty DDK Python app",
+    name="aws-ddk-core",
+    version="0.1.2",
+    description="DDK Core",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="author",
-    package_dir={"": "{{cookiecutter.directory_name}}"},
-    packages=setuptools.find_packages(where="{{cookiecutter.directory_name}}"),
+    package_dir={"": "aws_ddk_core"},
+    packages=setuptools.find_packages(where="aws_ddk_core"),
     install_requires=open("requirements.txt").read().strip().split("\n"),
     python_requires=">=3.6",
     classifiers=[

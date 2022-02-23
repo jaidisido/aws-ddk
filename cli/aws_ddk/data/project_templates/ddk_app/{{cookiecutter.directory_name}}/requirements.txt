@@ -1,1 +1,0 @@
-aws_ddk_core=={{cookiecutter.ddk_core_version}}
